@@ -1,0 +1,150 @@
+/* ============================================================
+   index.css
+   Estilos propios de index.html.
+   Este archivo se usa para mejorar únicamente la página principal.
+
+   Debe cargarse después de general.css.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: PRESENTACIÓN PRINCIPAL
+   El selector de id usa #.
+   Este bloque afecta solo al elemento con id="presentacion".
+   ============================================================ */
+
+#presentacion {
+    background-color: #ffffff;
+    border-left: 8px solid #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 2: OBJETIVO
+   Aquí se refuerza visualmente el objetivo de aprendizaje.
+   ============================================================ */
+
+#objetivo {
+    background-color: #f7fff4;
+}
+
+
+/* ============================================================
+   BLOQUE 3: INTERESES
+   Aquí se trabaja con listas dentro de una sección específica.
+   El espacio indica descendencia:
+   #intereses li significa "los li que estén dentro de #intereses".
+   ============================================================ */
+
+#intereses li {
+    background-color: #f4f6f8;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+/* ============================================================
+   BLOQUE 4: MULTIMEDIA
+   Permite explicar bordes, fondo y separación visual.
+   ============================================================ */
+
+#multimedia article {
+    border: 1px solid #dddddd;
+    background-color: #fbfbfb;
+}
+
+#multimedia h3 {
+    color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 5: FIGURE E IMAGEN
+   Se aplica solo a figuras dentro de la página principal.
+   ============================================================ */
+
+main figure {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    background-color: #f4f6f8;
+    border-radius: 10px;
+}
+
+
+/* ============================================================
+   BLOQUE 6: FORMULARIO DE BÚSQUEDA
+   Este bloque se puede usar cuando explique formularios.
+   Se aplica a formularios ubicados dentro de section.
+   ============================================================ */
+
+section form {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px dashed #a8a8a7;
+}
+
+
+/* ============================================================
+   BLOQUE 7: BOTÓN PRINCIPAL
+   Se puede explicar cómo una clase permite reutilizar estilos.
+   Para usarla, colocar en HTML: class="boton-principal"
+   ============================================================ */
+
+.boton-principal {
+    background-color: #dba112;
+    color: #0d1910;
+}
+
+.boton-principal:hover {
+    background-color: #1b7505;
+    color: white;
+}
+
+
+/* ============================================================
+   BLOQUE 8: TARJETAS SIMPLES
+   Para enseñar clases, puede agregar class="tarjeta" a un article.
+   ============================================================ */
+
+.tarjeta {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================================================
+   BLOQUE 9: TEXTO DE APOYO
+   Para usarlo en HTML: class="nota"
+   ============================================================ */
+
+.nota {
+    background-color: #fff8e6;
+    border-left: 5px solid #dba112;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   BLOQUE 10: PEQUEÑO EFECTO VISUAL
+   :hover permite cambiar el estilo cuando el mouse pasa encima.
+   ============================================================ */
+
+article:hover {
+    border-color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 11: ESPACIADO ENTRE SECCIONES
+   margin-bottom separa visualmente cada bloque.
+   ============================================================ */
+
+main section {
+    margin-bottom: 24px;
+}

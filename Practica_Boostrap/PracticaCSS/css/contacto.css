@@ -1,0 +1,156 @@
+/* ============================================================
+   contacto.css
+   Estilos propios de pages/cto/contacto.html.
+   Este archivo sirve para explicar estilos específicos en una
+   página ubicada dentro de subcarpetas.
+
+   Debe cargarse después de general.css.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: ENCABEZADO DE CONTACTO
+   Se cambia el color del header únicamente en contacto.html.
+   ============================================================ */
+
+header {
+    background-color: #dba112;
+    color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 2: DATOS DE CONTACTO
+   Para usar este diseño, colocar class="datos-contacto" en section.
+   ============================================================ */
+
+.datos-contacto {
+    background-color: #fff8e6;
+    border-left: 6px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 3: ADDRESS
+   address se usa para información de contacto.
+   ============================================================ */
+
+address {
+    background-color: #f4f6f8;
+    padding: 12px;
+    border-radius: 8px;
+    font-style: normal;
+    border: 1px solid #dddddd;
+}
+
+
+/* ============================================================
+   BLOQUE 4: REDES SOCIALES
+   Para usar, colocar class="redes" en la sección o lista.
+   ============================================================ */
+
+.redes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.redes li {
+    margin-bottom: 10px;
+}
+
+.redes a {
+    display: inline-block;
+    background-color: #f4f6f8;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+.redes a:hover {
+    background-color: #1b7505;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   BLOQUE 5: FORMULARIO DE CONTACTO
+   Para usar, colocar class="formulario-contacto" en form.
+   ============================================================ */
+
+.formulario-contacto {
+    background-color: #ffffff;
+    border: 2px solid #dba112;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+
+/* ============================================================
+   BLOQUE 6: TEXTAREA
+   Se personaliza el campo de mensaje.
+   ============================================================ */
+
+.formulario-contacto textarea {
+    min-height: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ============================================================
+   BLOQUE 7: RADIO Y CHECKBOX
+   Se evita que radio y checkbox ocupen todo el ancho.
+   ============================================================ */
+
+.formulario-contacto input[type="radio"],
+.formulario-contacto input[type="checkbox"] {
+    width: auto;
+}
+
+
+/* ============================================================
+   BLOQUE 8: BOTONES DEL FORMULARIO
+   El botón de enviar y limpiar pueden diferenciarse con clases.
+   En HTML:
+   class="btn-enviar"
+   class="btn-limpiar"
+   ============================================================ */
+
+.btn-enviar {
+    background-color: #1b7505;
+}
+
+.btn-limpiar {
+    background-color: #a8a8a7;
+    color: #0d1910;
+}
+
+.btn-limpiar:hover {
+    background-color: #0d1910;
+    color: white;
+}
+
+
+/* ============================================================
+   BLOQUE 9: VALIDACIÓN DE CONTRASEÑA
+   Para usar, colocar class="validacion" en la sección.
+   ============================================================ */
+
+.validacion {
+    border-left: 6px solid #1b7505;
+    background-color: #f7fff4;
+}
+
+
+/* ============================================================
+   BLOQUE 10: MENSAJE DE AYUDA
+   Para usar en un párrafo: class="ayuda"
+   ============================================================ */
+
+.ayuda {
+    font-size: 14px;
+    color: #555555;
+    background-color: #f4f6f8;
+    padding: 10px;
+    border-radius: 6px;
+}

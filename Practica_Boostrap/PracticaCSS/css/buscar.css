@@ -1,0 +1,126 @@
+/* ============================================================
+   buscar.css
+   Estilos propios de pages/buscar.html.
+   Este archivo permite explicar una página interna con su propio
+   estilo sin dañar el diseño general del sitio.
+
+   Debe cargarse después de general.css.
+   ============================================================ */
+
+
+/* ============================================================
+   BLOQUE 1: ENCABEZADO DE BÚSQUEDA
+   Se puede observar que cada página puede tener identidad visual.
+   ============================================================ */
+
+header {
+    background-color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 2: CAJA EXPLICATIVA
+   Para usar este estilo, agregar class="explicacion" en una section.
+   ============================================================ */
+
+.explicacion {
+    background-color: #f7fff4;
+    border-left: 6px solid #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 3: FORMULARIO DE BÚSQUEDA
+   Selector de clase.
+   En HTML se usa así: class="formulario-busqueda"
+   ============================================================ */
+
+.formulario-busqueda {
+    background-color: #ffffff;
+    border: 2px solid #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 4: CAMPOS DE FORMULARIO
+   Se seleccionan campos dentro de .formulario-busqueda.
+   ============================================================ */
+
+.formulario-busqueda input,
+.formulario-busqueda select {
+    background-color: #f4f6f8;
+}
+
+
+/* ============================================================
+   BLOQUE 5: BOTÓN DE BÚSQUEDA
+   Para usar en HTML: class="btn-buscar"
+   ============================================================ */
+
+.btn-buscar {
+    background-color: #0d1910;
+    color: white;
+}
+
+.btn-buscar:hover {
+    background-color: #dba112;
+    color: #0d1910;
+}
+
+
+/* ============================================================
+   BLOQUE 6: TABLA DE CONTENIDOS
+   Permite mostrar diferencias entre tablas generales y específicas.
+   ============================================================ */
+
+.tabla-contenidos th {
+    background-color: #0d1910;
+}
+
+.tabla-contenidos td:first-child {
+    font-weight: bold;
+    color: #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 7: PROGRESO
+   Para explicar una clase aplicada a una sección.
+   ============================================================ */
+
+.avance-practica {
+    background-color: #fff8e6;
+    border-left: 6px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 8: PREGUNTAS DESPLEGABLES
+   Modifica details solo en buscar.html si se coloca dentro de main.
+   ============================================================ */
+
+main details {
+    background-color: white;
+    border: 1px solid #1b7505;
+}
+
+
+/* ============================================================
+   BLOQUE 9: EJEMPLOS DE CÓDIGO
+   pre se usa para mostrar texto respetando espacios y saltos.
+   ============================================================ */
+
+pre {
+    border-left: 6px solid #dba112;
+}
+
+
+/* ============================================================
+   BLOQUE 10: ENLACE ACTIVO MANUAL
+   Puede agregar class="activo" al enlace del menú actual.
+   ============================================================ */
+
+nav a.activo {
+    background-color: #0d1910;
+    color: white;
+}

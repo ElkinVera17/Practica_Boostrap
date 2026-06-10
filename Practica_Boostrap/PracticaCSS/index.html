@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mi perfil profesional</title>
+
+    <!-- Ícono de la pestaña del navegador -->
+    <link rel="icon" href="img/mundito.ico" type="image/x-icon">
+
+    <!-- Librería externa para usar íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Mi perfil profesional</h1>
+        <p>Práctica de HTML semántico, formularios, multimedia y navegación entre páginas.</p>
+    </header>
+
+    <!-- Menú de navegación principal -->
+    <nav>
+        <a class="class_btn_nav_1"  id="inicio" href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a class="class_btn_nav_1" id="objetivo" href="#objetivo">Objetivo</a>
+
+        <a class="class_btn_nav_2"  id="intereses" href="#intereses">Intereses</a>
+
+        <a class="class_btn_nav_2" id="multimedia" href="#multimedia">Multimedia</a>
+
+        <a class="class_btn_nav_3"  id="buscar" href="pages/buscar.html">Buscar</a>
+
+        <a class="class_btn_nav_3"  id="buscar" href="pages/Portafolio/portafolio.html">Portafolio</a>
+
+        <a class="class_btn_nav_3" id="contacto" href="pages/cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+    </nav>
+
+    <!-- Contenido lateral complementario -->
+    <aside>
+        <h2>Dato adicional</h2>
+        <p>
+            HTML semántico ayuda a organizar mejor el contenido de una página web.
+            Luego se podrá mejorar la presentación visual usando CSS.
+        </p>
+
+        <p>Ejemplos de íconos:</p>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de presentación -->
+        <section id="presentacion">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Mi nombre es Geovanny Brito Casanova. Estoy aprendiendo a crear páginas web
+                usando HTML de manera ordenada.
+            </p>
+
+            <p>
+                En esta página se practican etiquetas semánticas, enlaces, listas, tablas,
+                formularios, imágenes, audio, video e inserción de contenido externo.
+            </p>
+            <p class="nota">
+                Mi número de contacto es 0999999999.
+            </p>
+        </section>
+
+        <!-- Sección de objetivos -->
+        <section id="objetivo">
+            <h2>Objetivo de aprendizaje</h2>
+
+            <p>
+                Crear una página web básica con estructura clara, rutas relativas y contenido
+                organizado antes de comenzar con CSS.
+            </p>
+
+            <p>
+                Ejemplo de formatos básicos:
+                <b>texto en negrita</b>,
+                <i>texto en cursiva</i>,
+                <u>texto subrayado</u>,
+                <strong>texto importante</strong> y
+                <em>texto enfatizado</em>.
+            </p>
+        </section>
+
+        <!-- Sección de intereses -->
+        <section id="intereses" class="card">
+            <h2>Mis intereses</h2>
+
+            <ul>
+                <li>Diseño web</li>
+                <li>Programación</li>
+                <li>Tecnología</li>
+                <li>Desarrollo de aplicaciones</li>
+            </ul>
+            <p class="nota">
+                Estos intereses me motivan a aprender HTML para crear páginas web atractivas.
+        </section>
+
+        <!-- Sección de pasos -->
+        <section id="pasos">
+            <h2>Pasos para estudiar HTML</h2>
+
+            <ol>
+                <li>Abrir el editor de código.</li>
+                <li>Crear la carpeta del proyecto.</li>
+                <li>Crear los archivos HTML.</li>
+                <li>Escribir etiquetas HTML correctamente.</li>
+                <li>Guardar los cambios.</li>
+                <li>Abrir la página en el navegador.</li>
+            </ol>
+            <p class="nota"> 
+                Seguir estos pasos me ayuda a organizar mi aprendizaje de HTML de manera efectiva.
+        </section>
+
+        <!-- Sección con imagen -->
+        <section>
+            <h2>Institución de referencia</h2>
+
+            <figure>
+                <img src="img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE" width="300">
+                <figcaption>Universidad de las Fuerzas Armadas ESPE.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección multimedia -->
+        <section id="multimedia">
+            <h2>Contenido multimedia</h2>
+
+            <article>
+                <h3>Video local</h3>
+
+                <video src="video/videoEjemploDiagnostica.mp4" controls width="400"
+                    poster="img/espe/imagenEjemploEspe.png" muted loop>
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </article>
+
+            <article>
+                <h3>Audio local</h3>
+
+                <audio src="audio/audioEjemploA7X.mp3" controls loop preload="metadata">
+                    Tu navegador no soporta la etiqueta de audio.
+                </audio>
+            </article>
+
+            <article>
+                <h3>Video externo con iframe</h3>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bdz90srbneU?si=QoyqD5uKp2PkH5kk"
+                    title="Video de YouTube" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+
+        <!-- Sección de publicaciones -->
+        <section>
+            <h2>Publicaciones</h2>
+
+            <article>
+                <h3>¿Por qué aprender HTML?</h3>
+                <p>
+                    HTML permite crear la estructura de una página web de forma ordenada.
+                </p>
+            </article>
+
+            <article>
+                <h3>Importancia de la semántica</h3>
+                <p>
+                    Las etiquetas semánticas ayudan a que el contenido sea más comprensible
+                    para personas, navegadores y motores de búsqueda.
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección de tabla -->
+        <section>
+            <h2>Horario de estudio</h2>
+
+            <table border="1">
+                <caption>Plan semanal de práctica HTML</caption>
+
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Práctica de estructura HTML.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Martes</td>
+                        <td>Revisión de etiquetas semánticas.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Práctica de listas, tablas e imágenes.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jueves</td>
+                        <td>Práctica de formularios.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Entrega de la práctica.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección de formulario de búsqueda -->
+        <section>
+            <h2>Formulario de búsqueda</h2>
+
+            <!-- 
+                Este formulario usa GET.
+                Por eso los datos viajan en la URL hacia pages/buscar.html.
+            -->
+            <form method="GET" action="pages/buscar.html">
+
+                <label for="tema">Tema:</label>
+                <input type="text" id="tema" name="tema" placeholder="Escriba un tema" required minlength="3"
+                    maxlength="20">
+
+                <br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Escriba su correo" required>
+
+                <br><br>
+
+                <p>Seleccione los temas de interés:</p>
+
+                <label>
+                    <input type="checkbox" name="temas[]" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="temas[]" value="css">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="temas[]" value="javascript">
+                    JavaScript
+                </label>
+
+                <br><br>
+
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Buscar
+                </button>
+            </form>
+        </section>
+
+        <!-- Sección de registro de horario -->
+        <section>
+            <h2>Registro de horario</h2>
+
+            <form method="GET" action="pages/buscar.html">
+
+                <label for="asignatura">Asignatura:</label>
+                <select id="asignatura" name="asignatura" required>
+                    <option value="">Seleccione una asignatura</option>
+                    <option value="programacion">Programación</option>
+                    <option value="base_datos">Base de Datos</option>
+                    <option value="redes">Redes</option>
+                    <option value="sistemas_operativos">Sistemas Operativos</option>
+                </select>
+
+                <br><br>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800" required>
+
+                <br><br>
+
+                <button type="submit">Enviar horario</button>
+            </form>
+        </section>
+
+        <!-- Sección de avance del curso -->
+        <section>
+            <h2>Avance del curso</h2>
+
+            <label for="avance-html">HTML básico:</label>
+            <progress id="avance-html" value="80" max="100"></progress>
+            <span>80%</span>
+
+            <p>Formularios:</p>
+            <progress value="60" max="100"></progress>
+            <span>60%</span>
+
+            <p>Nivel de aprendizaje en HTML:</p>
+            <meter value="8" min="0" max="10"></meter>
+        </section>
+
+        <!-- Sección de preguntas frecuentes -->
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Qué es HTML?</summary>
+                <p>HTML es el lenguaje que permite crear la estructura de una página web.</p>
+            </details>
+
+            <details>
+                <summary>¿Para qué sirve una etiqueta?</summary>
+                <p>Una etiqueta indica al navegador cómo debe interpretar una parte del contenido.</p>
+            </details>
+        </section>
+
+        <!-- Sección de texto técnico -->
+        <section>
+            <h2>Texto técnico en HTML</h2>
+
+            <p>
+                Para guardar un archivo se puede usar el atajo:
+                <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+            </p>
+
+            <p>
+                Una etiqueta se puede mostrar como texto usando entidades:
+                <code>&lt;h1&gt;Título principal&lt;/h1&gt;</code>
+            </p>
+
+            <p>
+                Ejemplo de entidad HTML:
+                &copy; representa derechos de autor.
+            </p>
+
+            <p class="nota">
+                Última actualización:
+                <time datetime="2026-05-28">28 de mayo de 2026</time>.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Elking.</p>
+        <p>Clase de Fundamentos Web - HTML Semántico.</p>
+
+        <address>
+            Ecuador<br>
+            Contacto académico: curso@ejemplo.com
+        </address>
+    </footer>
+
+</body>
+
+</html>
