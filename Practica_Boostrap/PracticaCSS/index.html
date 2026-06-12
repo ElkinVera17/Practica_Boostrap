@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+ 
+<head >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Mi perfil profesional</title>
@@ -110,8 +110,8 @@
             <h2>Mis intereses</h2>
 
             <ul>
-                <li>Diseño web</li>
-                <li>Programación</li>
+                <li class="display-none">Diseño web</li>
+                <li class="visibility-hidden">Programación</li>
                 <li>Tecnología</li>
                 <li>Desarrollo de aplicaciones</li>
             </ul>
@@ -368,6 +368,21 @@
                 <time datetime="2026-05-28">28 de mayo de 2026</time>.
             </p>
         </section>
+
+        <!-- Sección para explicar z-index -->
+<section id="ejemplo-zindex">
+    <h2>Ejemplo visual de z-index</h2>
+
+    <p class="nota">
+        z-index permite controlar qué elemento aparece encima cuando varias cajas se superponen.
+    </p>
+
+    <div class="zona-zindex">
+        <div class="caja-z caja-roja">z-index: 1</div>
+        <div class="caja-z caja-verde">z-index: 2</div>
+        <div class="caja-z caja-azul">z-index: 3</div>
+    </div>
+</section>
 
     </main>
 
