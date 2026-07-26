@@ -1,407 +1,464 @@
 <!DOCTYPE html>
 <html lang="es">
- 
-<head >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Mi perfil profesional</title>
 
-    <!-- Ícono de la pestaña del navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elkin Vera - Perfil Profesional</title>
+    <meta name="description"
+        content="Perfil profesional de Elkin Vera, estudiante de Tecnologías de la Información en la ESPE">
+
+    <!-- Ícono -->
     <link rel="icon" href="img/mundito.ico" type="image/x-icon">
 
-    <!-- Librería externa para usar íconos -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="css/multimedia.css">
 </head>
 
 <body>
 
-    <!-- Encabezado principal de la página -->
+    <!-- ================= HEADER ================= -->
     <header>
-        <h1>Mi perfil profesional</h1>
-        <p>Práctica de HTML semántico, formularios, multimedia y navegación entre páginas.</p>
+        <div class="header-content">
+            <h1>Elkin Vera</h1>
+            <p class="subtitle">Estudiante de Tecnologías de la Información | ESPE</p>
+            <div class="header-badges">
+                <span class="badge"><i class="fa-solid fa-code"></i> Desarrollo Web</span>
+                <span class="badge"><i class="fa-solid fa-network-wired"></i> Redes</span>
+                <span class="badge"><i class="fa-solid fa-shield-halved"></i> Ciberseguridad</span>
+            </div>
+        </div>
     </header>
 
-    <!-- Menú de navegación principal -->
+    <!-- ================= NAVEGACIÓN ================= -->
     <nav>
-        <a class="class_btn_nav_1"  id="inicio" href="index.html">
-            <i class="fa-solid fa-house"></i>
-            Inicio
-        </a>
-
-        <a class="class_btn_nav_1" id="objetivo" href="#objetivo">Objetivo</a>
-
-        <a class="class_btn_nav_2"  id="intereses" href="#intereses">Intereses</a>
-
-        <a class="class_btn_nav_2" id="multimedia" href="#multimedia">Multimedia</a>
-
-        <a class="class_btn_nav_3"  id="buscar" href="pages/buscar.html">Buscar</a>
-
-        <a class="class_btn_nav_3"  id="buscar" href="pages/Portafolio/portafolio.html">Portafolio</a>
-        <a class="class_btn_nav_3"  id="buscar" href="pages/proyección.html">Proyeccion</a>
-
-        <a class="class_btn_nav_3" id="contacto" href="pages/cto/contacto.html">
-            <i class="fa-solid fa-envelope"></i>
-            Contacto
-        </a>
+        <a href="#inicio" class="active"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="#perfil"><i class="fa-solid fa-user"></i> Perfil</a>
+        <a href="#habilidades"><i class="fa-solid fa-laptop-code"></i> Habilidades</a>
+        <a href="#galeria"><i class="fa-solid fa-images"></i> Proyectos</a>
+        <a href="#musica"><i class="fa-solid fa-music"></i> Música</a>
+        <a href="#videos"><i class="fa-solid fa-video"></i> Multimedia</a>
+        <a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        <a href="pages/Portafolio/portafolio.html"><i class="fa-solid fa-briefcase"></i> Portafolio</a>
+        <a href="pages/proyección.html"><i class="fa-solid fa-project-diagram"></i> Proyección</a>
     </nav>
 
-    <!-- Contenido lateral complementario -->
+    <!-- ================= ASIDE ================= -->
     <aside>
-        <h2>Dato adicional</h2>
-        <p>
-            HTML semántico ayuda a organizar mejor el contenido de una página web.
-            Luego se podrá mejorar la presentación visual usando CSS.
-        </p>
-
-        <p>Ejemplos de íconos:</p>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-solid fa-phone"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <div class="aside-card">
+            <img src="img/f1.png" alt="Foto de perfil de Elkin Vera" class="aside-avatar">
+            <h3>Elkin Vera</h3>
+            <p class="aside-rol">ITIN Student</p>
+            <div class="aside-social">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <hr>
+            <ul class="aside-info">
+                <li><i class="fa-solid fa-graduation-cap"></i> ESPE - 2026</li>
+                <li><i class="fa-solid fa-location-dot"></i> Ecuador</li>
+                <li><i class="fa-solid fa-envelope"></i> elkin.vera@espe.edu.ec</li>
+                <li><i class="fa-solid fa-phone"></i> +593 99 999 9999</li>
+            </ul>
+        </div>
     </aside>
 
-    <!-- Contenido principal -->
+    <!-- ================= MAIN ================= -->
     <main>
 
-        <!-- Sección de presentación -->
-        <section id="presentacion">
-            <h2>Sobre mí</h2>
-
-            <p>
-                Mi nombre es Geovanny Brito Casanova. Estoy aprendiendo a crear páginas web
-                usando HTML de manera ordenada.
-            </p>
-
-            <p>
-                En esta página se practican etiquetas semánticas, enlaces, listas, tablas,
-                formularios, imágenes, audio, video e inserción de contenido externo.
-            </p>
-            <p class="nota">
-                Mi número de contacto es 0999999999.
-            </p>
-        </section>
-
-        <!-- Sección de objetivos -->
-        <section id="objetivo">
-            <h2>Objetivo de aprendizaje</h2>
-
-            <p>
-                Crear una página web básica con estructura clara, rutas relativas y contenido
-                organizado antes de comenzar con CSS.
-            </p>
-
-            <p>
-                Ejemplo de formatos básicos:
-                <b>texto en negrita</b>,
-                <i>texto en cursiva</i>,
-                <u>texto subrayado</u>,
-                <strong>texto importante</strong> y
-                <em>texto enfatizado</em>.
-            </p>
-        </section>
-
-        <!-- Sección de intereses -->
-        <section id="intereses" class="card">
-            <h2>Mis intereses</h2>
-
-            <ul>
-                <li class="display-none">Diseño web</li>
-                <li class="visibility-hidden">Programación</li>
-                <li>Tecnología</li>
-                <li>Desarrollo de aplicaciones</li>
-            </ul>
-            <p class="nota">
-                Estos intereses me motivan a aprender HTML para crear páginas web atractivas.
-        </section>
-
-        <!-- Sección de pasos -->
-        <section id="pasos">
-            <h2>Pasos para estudiar HTML</h2>
-
-            <ol>
-                <li>Abrir el editor de código.</li>
-                <li>Crear la carpeta del proyecto.</li>
-                <li>Crear los archivos HTML.</li>
-                <li>Escribir etiquetas HTML correctamente.</li>
-                <li>Guardar los cambios.</li>
-                <li>Abrir la página en el navegador.</li>
-            </ol>
-            <p class="nota"> 
-                Seguir estos pasos me ayuda a organizar mi aprendizaje de HTML de manera efectiva.
-        </section>
-
-        <!-- Sección con imagen -->
-        <section>
-            <h2>Institución de referencia</h2>
-
-            <figure>
-                <img src="img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE" width="300">
-                <figcaption>Universidad de las Fuerzas Armadas ESPE.</figcaption>
-            </figure>
-        </section>
-
-        <!-- Sección multimedia -->
-        <section id="multimedia">
-            <h2>Contenido multimedia</h2>
-
-            <article>
-                <h3>Video local</h3>
-
-                <video src="video/videoEjemploDiagnostica.mp4" controls width="400"
-                    poster="img/espe/imagenEjemploEspe.png" muted loop>
-                    Tu navegador no soporta la etiqueta de video.
-                </video>
-            </article>
-
-            <article>
-                <h3>Audio local</h3>
-
-                <audio src="audio/audioEjemploA7X.mp3" controls loop preload="metadata">
-                    Tu navegador no soporta la etiqueta de audio.
-                </audio>
-            </article>
-
-            <article>
-                <h3>Video externo con iframe</h3>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bdz90srbneU?si=QoyqD5uKp2PkH5kk"
-                    title="Video de YouTube" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </article>
-        </section>
-
-        <!-- Sección de publicaciones -->
-        <section>
-            <h2>Publicaciones</h2>
-
-            <article>
-                <h3>¿Por qué aprender HTML?</h3>
+        <!-- ======= SECCIÓN INICIO ======= -->
+        <section id="inicio">
+            <div class="hero">
+                <h2>Construyendo el futuro <br> desde la tecnología</h2>
                 <p>
-                    HTML permite crear la estructura de una página web de forma ordenada.
+                    Soy <strong>Elkin Vera</strong>, estudiante de <strong>Tecnologías de la Información</strong>
+                    en la Universidad de las Fuerzas Armadas ESPE. Me apasiona el desarrollo web,
+                    las redes y la ciberseguridad. Mi objetivo es convertirme en un profesional
+                    integral que conecte la tecnología con soluciones prácticas para la sociedad.
                 </p>
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn-primary"><i class="fa-solid fa-folder-open"></i> Ver proyectos</a>
+                    <a href="#contacto" class="btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SECCIÓN PERFIL ======= -->
+        <section id="perfil">
+            <h2><i class="fa-solid fa-user-tie"></i> Sobre mí</h2>
+            <div class="perfil-grid">
+                <div class="perfil-texto">
+                    <p>
+                        Soy un apasionado de la tecnología con formación en contabilidad, lo que me da
+                        una perspectiva única para entender procesos y sistemas. Actualmente curso la
+                        carrera de <strong>Tecnologías de la Información</strong> en la ESPE, donde
+                        he desarrollado habilidades en programación, bases de datos y redes.
+                    </p>
+                    <p>
+                        Mi enfoque está en la <strong>ciberseguridad</strong> y el <strong>desarrollo de
+                            soluciones tecnológicas</strong> que impacten positivamente en la sociedad.
+                        Me caracterizo por ser autodidacta, responsable y con gran capacidad de adaptación.
+                    </p>
+                    <div class="perfil-datos">
+                        <div class="dato"><span>📍</span> Ecuador</div>
+                        <div class="dato"><span>🎓</span> ESPE - ITIN</div>
+                        <div class="dato"><span>💼</span> 1 año de experiencia</div>
+                        <div class="dato"><span>🌟</span> Full Stack en formación</div>
+                    </div>
+                </div>
+                <div class="perfil-imagen">
+                    <img src="img/perfil/ft_perfil_profesional.jpg" alt="Elkin Vera - Perfil profesional">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SECCIÓN HABILIDADES ======= -->
+        <section id="habilidades">
+            <h2><i class="fa-solid fa-laptop-code"></i> Habilidades técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                    <span>70%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%;"></div>
+                    </div>
+                    <span>65%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Bases de Datos</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                    <span>60%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Redes</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%;"></div>
+                    </div>
+                    <span>55%</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Ciberseguridad</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%;"></div>
+                    </div>
+                    <span>50%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SECCIÓN GALERÍA (PASO 1) ======= -->
+        <section id="galeria">
+            <h2><i class="fa-solid fa-images"></i> Proyectos destacados</h2>
+            <p class="section-desc">
+                Explora algunos de mis proyectos desarrollados durante mi formación académica.
+                <br><small>Pasa el mouse sobre las imágenes para ver el efecto interactivo.</small>
+            </p>
+
+            <div class="galeria-grid">
+                <!-- Proyecto 1 -->
+                <figure class="galeria-item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/proyectos/sddefault.grande.png">
+                        <source media="(min-width: 700px)" srcset="img/proyectos/ProductoJava-mediano.png">
+                        <source media="(max-width: 699px)" srcset="img/proyectos/ProductoJava-pequeño.png">
+                        <img src="img/proyectos/sddefault.grande.png" alt="Sistema de gestión de productos - Proyecto Java"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>
+                        <h4>Sistema de Gestión de Productos</h4>
+                        <p>Aplicación Java con interfaz gráfica y base de datos</p>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Proyecto 2 -->
+                <figure class="galeria-item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/proyectos/ContableSF-grande.png">
+                        <source media="(min-width: 700px)" srcset="img/proyectos/ContableSF-mediana.png">
+                        <source media="(max-width: 699px)" srcset="img/proyectos/ContableSF-pequeña.png">
+                        <img src="img/Proyeción/ContableSF.png" alt="Análisis de datos financieros - Proyecto Python"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>
+                        <h4>Análisis Financiero con Python</h4>
+                        <p>Dashboard interactivo para análisis de datos contables</p>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Proyecto 3 -->
+                <figure class="galeria-item">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/proyectos/monitoreo de redes-grande.png">
+                        <source media="(min-width: 700px)" srcset="img/proyectos/monitoreo de redes-mediana.png">
+                        <source media="(max-width: 699px)" srcset="img/proyectos/monitoreo de redes-pequeña.png">
+                        <img src="img/proyectos/monitoreo de redes-pequeña.png" alt="Sistema de monitoreo de redes - Proyecto IoT"
+                            loading="lazy">
+                    </picture>
+                    <figcaption>
+                        <h4>Monitoreo de Redes IoT</h4>
+                        <p>Sistema de sensores para monitoreo en tiempo real</p>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Node.js</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ======= SECCIÓN MÚSICA (PASO 2) ======= -->
+        <section id="musica">
+            <h2><i class="fa-solid fa-headphones"></i> Mi música favorita</h2>
+            <p class="section-desc">
+                La música es parte fundamental de mi proceso creativo. Aquí comparto algunas
+                de las canciones que me inspiran en mi día a día.
+            </p>
+
+            <div class="musica-grid">
+                <!-- Audio 1: Controles nativos -->
+                <article class="audio-card">
+                    <div class="audio-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Rock Alternativo</h3>
+                    <p class="audio-artist">Avenged Sevenfold</p>
+                    <audio controls class="audio-nativo">
+                        <source src="audio/a.ogg" type="audio/mpeg">
+                        Tu navegador no soporta el reproductor de audio.
+                    </audio>
+                    <span class="audio-desc">Canción que me motiva a superar desafíos</span>
+                </article>
+
+                <!-- Audio 2: Controles personalizados -->
+                <article class="audio-card" id="audio-personalizado">
+                    <div class="audio-icon"><i class="fa-solid fa-headphones"></i></div>
+                    <h3>Música Electrónica</h3>
+                    <p class="audio-artist">Para concentración y productividad</p>
+
+                    <div class="audio-custom">
+                        <audio id="miAudio" preload="metadata">
+                            <source src="audio/a.ogg" type="audio/mpeg">
+                            Tu navegador no soporta el reproductor de audio.
+                        </audio>
+
+                        <div class="custom-controls">
+                            <button class="btn-audio" id="btnPlayPause" aria-label="Reproducir o pausar">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                            <div class="audio-progress-container">
+                                <div class="audio-progress" id="audioProgress"></div>
+                            </div>
+                            <span class="audio-time" id="audioTime">00:00 / 00:00</span>
+                        </div>
+
+                        <div class="audio-status">
+                            <span id="estadoAudio"><i class="fa-regular fa-circle"></i> Detenido</span>
+                            <span class="volume-control">
+                                <i class="fa-solid fa-volume-low"></i>
+                                <input type="range" id="volumenAudio" min="0" max="1" step="0.1" value="0.8">
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======= SECCIÓN VIDEOS (PASO 3) ======= -->
+        <section id="videos">
+            <h2><i class="fa-solid fa-film"></i> Contenido multimedia</h2>
+            <p class="section-desc">
+                Mis intereses profesionales y personales capturados en video.
+                Desde proyectos técnicos hasta momentos de inspiración.
+            </p>
+
+            <!-- Banner dinámico con video local -->
+            <article class="video-banner-container">
+                <h3><i class="fa-solid fa-play-circle"></i> Video banner - Mi espacio profesional</h3>
+                <div class="video-banner">
+                    <video id="videoBanner" poster="img/banner/banner-poster.jpg" muted loop playsinline
+                        preload="metadata">
+                        <source src="video/EspacioPreparacion.mp4" type="video/mp4">
+                        Tu navegador no soporta el reproductor de video.
+                    </video>
+                    <div class="banner-overlay">
+                        <div class="banner-content">
+                            <h3>Elkin Vera</h3>
+                            <p>Tecnologías de la Información | ESPE</p>
+                            <button id="btnBannerPlay" class="btn-banner-play">
+                                <i class="fa-solid fa-play"></i> Reproducir banner
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </article>
 
-            <article>
-                <h3>Importancia de la semántica</h3>
-                <p>
-                    Las etiquetas semánticas ayudan a que el contenido sea más comprensible
-                    para personas, navegadores y motores de búsqueda.
+            <!-- Video externo - Serie favorita -->
+            <article class="video-externo">
+                <h3><i class="fa-solid fa-tv"></i> Mi serie favorita</h3>
+                <p class="section-desc">
+                    Esta serie me inspira por su trama y personajes.
+                    <br><small>Rosario Tijeras - Una historia de resiliencia y superación.</small>
                 </p>
+                <div class="iframe-container">
+                    <!-- ESPACIO PARA ROSARIO TIJERAS -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FuERl8skhm0?si=abX3lGaQnye6XMfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </article>
+
+            <!-- Video personal - Tiempo libre -->
+            <article class="video-personal">
+                <h3><i class="fa-solid fa-umbrella-beach"></i> Mi tiempo libre</h3>
+                <p class="section-desc">
+                    Disfruto de la naturaleza y los momentos de desconexión.
+                </p>
+                <div class="video-container">
+                    <!-- ESPACIO PARA TU VIDEO EN EL RÍO -->
+                    <video controls loop poster="img/videos/rio-poster.jpg" preload="metadata">
+                        <source src="video/TiempoLibre.mp4" type="video/mp4">
+                        <source src="video/TiempoLibre.mp4" type="video/mp4">
+                        Tu navegador no soporta el reproductor de video.
+                    </video>
+                    <p class="video-caption">
+                        <i class="fa-solid fa-water"></i> Conexión con la naturaleza - Río en Ecuador
+                    </p>
+                </div>
+            </article>
+
         </section>
 
-        <!-- Sección de tabla -->
-        <section>
-            <h2>Horario de estudio</h2>
-
-            <table border="1">
-                <caption>Plan semanal de práctica HTML</caption>
-
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Actividad</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>Práctica de estructura HTML.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Martes</td>
-                        <td>Revisión de etiquetas semánticas.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>Práctica de listas, tablas e imágenes.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Jueves</td>
-                        <td>Práctica de formularios.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Viernes</td>
-                        <td>Entrega de la práctica.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Sección de formulario de búsqueda -->
-        <section>
-            <h2>Formulario de búsqueda</h2>
-
-            <!-- 
-                Este formulario usa GET.
-                Por eso los datos viajan en la URL hacia pages/buscar.html.
-            -->
-            <form method="GET" action="pages/buscar.html">
-
-                <label for="tema">Tema:</label>
-                <input type="text" id="tema" name="tema" placeholder="Escriba un tema" required minlength="3"
-                    maxlength="20">
-
-                <br><br>
-
-                <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo" placeholder="Escriba su correo" required>
-
-                <br><br>
-
-                <p>Seleccione los temas de interés:</p>
-
-                <label>
-                    <input type="checkbox" name="temas[]" value="html">
-                    HTML
-                </label>
-
-                <label>
-                    <input type="checkbox" name="temas[]" value="css">
-                    CSS
-                </label>
-
-                <label>
-                    <input type="checkbox" name="temas[]" value="javascript">
-                    JavaScript
-                </label>
-
-                <br><br>
-
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Buscar
-                </button>
-            </form>
-        </section>
-
-        <!-- Sección de registro de horario -->
-        <section>
-            <h2>Registro de horario</h2>
-
-            <form method="GET" action="pages/buscar.html">
-
-                <label for="asignatura">Asignatura:</label>
-                <select id="asignatura" name="asignatura" required>
-                    <option value="">Seleccione una asignatura</option>
-                    <option value="programacion">Programación</option>
-                    <option value="base_datos">Base de Datos</option>
-                    <option value="redes">Redes</option>
-                    <option value="sistemas_operativos">Sistemas Operativos</option>
-                </select>
-
-                <br><br>
-
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora" min="08:00" max="17:00" step="1800" required>
-
-                <br><br>
-
-                <button type="submit">Enviar horario</button>
-            </form>
-        </section>
-
-        <!-- Sección de avance del curso -->
-        <section>
-            <h2>Avance del curso</h2>
-
-            <label for="avance-html">HTML básico:</label>
-            <progress id="avance-html" value="80" max="100"></progress>
-            <span>80%</span>
-
-            <p>Formularios:</p>
-            <progress value="60" max="100"></progress>
-            <span>60%</span>
-
-            <p>Nivel de aprendizaje en HTML:</p>
-            <meter value="8" min="0" max="10"></meter>
-        </section>
-
-        <!-- Sección de preguntas frecuentes -->
-        <section>
-            <h2>Preguntas frecuentes</h2>
-
-            <details>
-                <summary>¿Qué es HTML?</summary>
-                <p>HTML es el lenguaje que permite crear la estructura de una página web.</p>
-            </details>
-
-            <details>
-                <summary>¿Para qué sirve una etiqueta?</summary>
-                <p>Una etiqueta indica al navegador cómo debe interpretar una parte del contenido.</p>
-            </details>
-        </section>
-
-        <!-- Sección de texto técnico -->
-        <section>
-            <h2>Texto técnico en HTML</h2>
-
-            <p>
-                Para guardar un archivo se puede usar el atajo:
-                <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+        <!-- ======= SECCIÓN CONTACTO ======= -->
+        <section id="contacto">
+            <h2><i class="fa-solid fa-envelope"></i> Contacto</h2>
+            <p class="section-desc">
+                ¿Interesado en colaborar o conocer más sobre mi trabajo?
+                ¡Contáctame!
             </p>
 
-            <p>
-                Una etiqueta se puede mostrar como texto usando entidades:
-                <code>&lt;h1&gt;Título principal&lt;/h1&gt;</code>
-            </p>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:elkin.vera@espe.edu.ec">elkin.vera@espe.edu.ec</a>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <a href="tel:+593999999999">+593 99 999 9999</a>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <span>Ecuador</span>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="#" target="_blank">github.com/ElkinVera17</a>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-                Ejemplo de entidad HTML:
-                &copy; representa derechos de autor.
-            </p>
-
-            <p class="nota">
-                Última actualización:
-                <time datetime="2026-05-28">28 de mayo de 2026</time>.
-            </p>
+                <form class="contacto-form" method="POST" action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un tema</option>
+                            <option value="colaboracion">Colaboración profesional</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+            </div>
         </section>
-
-        <!-- Sección para explicar z-index -->
-<section id="ejemplo-zindex">
-    <h2>Ejemplo visual de z-index</h2>
-
-    <p class="nota">
-        z-index permite controlar qué elemento aparece encima cuando varias cajas se superponen.
-    </p>
-
-    <div class="zona-zindex">
-        <div class="caja-z caja-roja">z-index: 1</div>
-        <div class="caja-z caja-verde">z-index: 2</div>
-        <div class="caja-z caja-azul">z-index: 3</div>
-    </div>
-</section>
 
     </main>
 
-    <!-- Pie de página -->
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 Elking.</p>
-        <p>Clase de Fundamentos Web - HTML Semántico.</p>
-
-        <address>
-            Ecuador<br>
-            Contacto académico: curso@ejemplo.com
-        </address>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Elkin Vera</h3>
+                <p>Construyendo soluciones tecnológicas con pasión y compromiso.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#perfil">Perfil</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="pages/Portafolio/portafolio.html">Portafolio</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elkin Vera. Todos los derechos reservados.</p>
+            <p><small>Ingeniería en Tecnologías de la Información - ESPE</small></p>
+        </div>
     </footer>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-
+    <!-- Scripts -->
+    <script src="js/multimedia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

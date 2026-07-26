@@ -1,0 +1,470 @@
+/* ============================================================
+   multimedia.css
+   Estilos para elementos multimedia: galería, audio, video
+   ============================================================ */
+
+/* ============================================================
+   PASO 1: GALERÍA RESPONSIVE
+   ============================================================ */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.galeria-item {
+    margin: 0;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #e8ecef;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.galeria-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px rgba(27, 117, 5, 0.25);
+    border-color: #1b7505;
+}
+
+.galeria-item picture {
+    display: block;
+    overflow: hidden;
+}
+
+.galeria-item picture img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.galeria-item:hover picture img {
+    transform: scale(1.08);
+}
+
+.galeria-item figcaption {
+    padding: 18px 20px 20px;
+}
+
+.galeria-item figcaption h4 {
+    margin: 0 0 8px;
+    color: #0d1910;
+    font-size: 18px;
+}
+
+.galeria-item figcaption p {
+    margin: 0 0 12px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #f4f6f8;
+    color: #0d1910;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 6px;
+    border: 1px solid #ddd;
+}
+
+.tech-tag:first-of-type {
+    background: #1b7505;
+    color: white;
+    border-color: #1b7505;
+}
+
+
+/* ============================================================
+   PASO 2: AUDIO PERSONALIZADO
+   ============================================================ */
+
+.musica-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.audio-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid #e8ecef;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.audio-card:hover {
+    border-color: #1b7505;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.audio-icon {
+    font-size: 32px;
+    color: #1b7505;
+    margin-bottom: 10px;
+}
+
+.audio-card h3 {
+    margin: 0 0 4px;
+    color: #0d1910;
+}
+
+.audio-artist {
+    color: #777;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.audio-nativo {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.audio-desc {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-top: 8px;
+}
+
+/* --- Controles personalizados --- */
+.audio-custom {
+    margin-top: 15px;
+}
+
+.custom-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f4f6f8;
+    padding: 12px 16px;
+    border-radius: 30px;
+    margin: 12px 0;
+}
+
+.btn-audio {
+    background: #1b7505;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.btn-audio:hover {
+    background: #0d1910;
+    transform: scale(1.05);
+}
+
+.btn-audio.playing {
+    background: #dba112;
+    color: #0d1910;
+}
+
+.btn-audio.playing:hover {
+    background: #b8860b;
+}
+
+.audio-progress-container {
+    flex: 1;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.audio-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #1b7505, #2e9c12);
+    border-radius: 3px;
+    transition: width 0.1s ease;
+}
+
+.audio-time {
+    font-size: 13px;
+    color: #555;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.audio-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #777;
+    margin-top: 8px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.volume-control input[type="range"] {
+    width: 80px;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #1b7505;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* ============================================================
+   PASO 3: VIDEO
+   ============================================================ */
+
+/* --- Banner dinámico --- */
+.video-banner-container {
+    margin: 30px 0;
+}
+
+.video-banner {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0d1910;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-banner video {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 25, 16, 0.85) 0%, rgba(13, 25, 16, 0.4) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    animation: fadeInUp 1s ease;
+}
+
+.banner-content h3 {
+    font-size: 36px;
+    margin: 0 0 5px;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    text-align: center;
+    opacity: 0.9;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-banner-play {
+    background: #dba112;
+    color: #0d1910;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(219, 161, 18, 0.3);
+}
+
+.btn-banner-play:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(219, 161, 18, 0.5);
+}
+
+/* --- Iframe responsivo --- */
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #0d1910;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- Video personal --- */
+.video-container {
+    background: #f4f6f8;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e8ecef;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-caption {
+    margin: 12px 0 0;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.video-caption i {
+    color: #1b7505;
+    margin-right: 8px;
+}
+
+
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de entrada para elementos */
+.galeria-item {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.galeria-item:nth-child(2) {
+    animation-delay: 0.15s;
+    opacity: 0;
+}
+
+.galeria-item:nth-child(3) {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.audio-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.audio-card:nth-child(2) {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .galeria-item picture img {
+        height: 160px;
+    }
+
+    .musica-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .video-banner video {
+        height: 220px;
+    }
+
+    .banner-content h3 {
+        font-size: 24px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+
+    .custom-controls {
+        flex-wrap: wrap;
+        border-radius: 16px;
+    }
+
+    .audio-time {
+        font-size: 12px;
+    }
+
+    .volume-control input[type="range"] {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-item picture img {
+        height: 200px;
+    }
+
+    .audio-card {
+        padding: 18px;
+    }
+
+    .btn-banner-play {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .video-banner video {
+        height: 180px;
+    }
+}
